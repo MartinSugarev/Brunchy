@@ -1,0 +1,17 @@
+@use '../../styles/breakpoints.scss' as b;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid red;
+    @media (min-width: b.$smallBP) {
+        align-items: center;
+    }
+}
