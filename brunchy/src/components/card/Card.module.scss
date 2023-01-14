@@ -1,1 +1,65 @@
 @use '../../styles/colors.scss';
+
+.card{
+    width: 230px;
+    height: 270px;
+    border-radius: 30px;
+    background-color: colors.$card_background;
+    display: grid;
+    place-content: center;
+    position: relative;
+
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        transform: translateY(40%);
+
+        h6{
+            font-size: 1.2rem;
+            color: colors.$hero_text;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card-subtitle{
+            font-size: .9rem;
+            color: colors.$grey;
+            font-weight: 600;
+            
+        }
+        .price{
+            color: colors.$hero_text;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .price::before{
+            content: "$";
+            color: colors.$orange_text;
+            padding-right: 3px;
+        }
+
+    }
+
+    .card-basket{
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        padding: 8px;
+        border-radius: 7px;
+        background-color: colors.$white;
+        cursor: pointer;
+    }
+
+    .card-image{
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        right: 0;
+        top: -20px;
+
+    }
+}
+
+
