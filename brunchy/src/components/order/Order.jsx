@@ -1,14 +1,16 @@
 import style from './Order.module.scss';
-import React, { memo, useEffect, useState, useRef } from 'react';
+import React, { memo, useEffect, useState, useRef, useContext } from 'react';
 import OrderReview from './OrderReview';
 import classNames from 'classnames';
 import OrderComplete from './OrderComplete';
+import {Context} from '../../App';
 
 
-const Order = ({price}) => {
+const Order = () => {
 
     const [isActive, setIsActive] = useState(true);
     const [showComplete, setShowComplete] = useState(false);
+    const {state, dispatch} = useContext(Context)
 
     const reviewRef = useRef()
 
@@ -39,6 +41,7 @@ const Order = ({price}) => {
         e.stopPropagation()
         setShowComplete(true)
         setIsActive(false)
+        dispatch({type: 'clear'})
     }
 
     return (
@@ -52,11 +55,11 @@ const Order = ({price}) => {
                 [style['order-list-container']]: true,
                 [style['hidden']]: isActive,
             })}>
-                <OrderReview />
+                <OrderReview list={state.items} price={state.price}/>
             </div>
         <div className={style['order-container']}>
             <img onClick={handleShowReview} className={style['order-basket']} src="/shopping-basket.png" alt="shopping-basket" />
-             <p>{price}</p>
+             <p>{state.price}</p>
              <button onClick={handleOrderNowClick} className={style['order-button']}>Order Now</button>
         </div>
         </div>
