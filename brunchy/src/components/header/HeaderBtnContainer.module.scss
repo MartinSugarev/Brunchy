@@ -14,9 +14,8 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    padding: 10px 0;
+    padding: 10px 25px 10px 0;
 
-}
 
 button:nth-child(3)::after{
   content: '';
@@ -29,4 +28,7 @@ button:nth-child(3)::after{
   bottom: 0;
   transform: translateX(10px);
   background-color: colors.$white;
+}
+
+
 }

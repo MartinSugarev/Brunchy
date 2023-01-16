@@ -1,12 +1,12 @@
 import style from './HeaderTitle.module.scss';
-import React, {memo} from 'react';
+import React from 'react';
 
-const HeaderTitle = ({title = 'Brunchy'}) => {
+const HeaderTitle = () => {
     return (
         <div className={style['headerTitle-container']}>
-            <h1>{title}</h1>
+            <h1>Brunchy</h1>
         </div>
     )
 }
 
-export default memo(HeaderTitle)
+export default HeaderTitle

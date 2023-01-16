@@ -1,15 +1,28 @@
+import React, {useEffect, useState} from 'react';
 import style from './App.module.scss'
-import HeaderTitle from './components/header/HeaderTitle';
-import Button from './components/button/Button';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
-import Card from './components/card/Card';
-
+import Order from './components/order/Order';
+import CardContainer from './components/card/CardContainer';
+import OrderReview from './components/order/OrderReview'
+import cardInfo from './data.json'
+import OrderListItem from './components/order/OrderListItem'
 
 function App() {
+
+  const [cardItems, setCardItems] = useState([])
+
+  useEffect(() => {
+     setCardItems(() => cardInfo.items)
+  }, [])
+
+
   return (
     <div className={style['app']}>
-      <Card title={'Butter Pancakes'} subTitle={'With honey'} price={'14.30'} />
+       <Header />
+       <Hero />
+       <CardContainer items={cardItems}/>
+       <Order />
     </div>
   );
 }

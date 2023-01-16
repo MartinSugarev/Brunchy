@@ -9,11 +9,14 @@
 
 .hero{
     width: 40%;
+
     @media (max-width: b.$wideBP){
-        width: 60%;
+        width: 80%;
+        margin: auto;
     }
     @media (max-width: b.$smallBP){
         width: 100%;
+        margin: auto;
     }
     
 

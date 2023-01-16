@@ -3,12 +3,16 @@ import classNames from 'classnames'
 
 import React, { memo } from 'react'
 
- const Button = ({text = 'active', type}) => {
+ const Button = ({text = 'active', type, handleClick}) => {
 
     const btnType = type === 'regular' ? 'regular' :  'active';
 
     return (
-       <button className={classNames({
+       <button onClick={() => {
+           console.log('here');
+           handleClick()
+           
+       }} className={classNames({
            [style['button']]: true,
            [style[`${btnType}`]]: type ? true : false
         })}>{text}</button>

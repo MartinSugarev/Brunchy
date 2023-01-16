@@ -1,0 +1,95 @@
+@use '../../styles/colors.scss';
+@use '../../styles//breakpoints.scss' as b;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.order-fixed-background{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    justify-content: center;
+    align-content: end;
+    background: rgba(colors.$white, 0.84);
+}
+
+.not-active{
+    position: relative;
+}
+
+
+.order-information-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.order-list-container{
+    display: block;
+    position: absolute;
+    bottom: 80px;
+}
+
+.hidden{
+    display: none;
+}
+
+.order-container{
+    width: 30vw;
+    border-radius: 15px;
+    margin: 0 auto;
+    background-color: colors.$card_background;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (max-width: b.$largeBP){
+        width: 50vw;
+    }
+
+    @media (max-width: b.$mediumBP){
+        width: 80vw;
+    }
+
+
+
+    .order-basket{
+        color: colors.$hero_text;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    p{
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: colors.$hero_text;
+    }
+
+    p::after{
+        content: "$";
+    }
+
+    .order-button{
+        border-radius: 15px;
+        padding: 7px 13px;
+        font-size: 1.1rem;
+        color: colors.$white;
+        background-color: colors.$regular_btn;
+        border: 0;
+        cursor: pointer;
+    }
+
+
+}

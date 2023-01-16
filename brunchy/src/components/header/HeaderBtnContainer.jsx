@@ -5,9 +5,9 @@ import Button from '../button/Button';
 const HeaderBtnContainer = () => {
     return (
         <div className={style['buttons-container']}>
-            <Button text={'about'} />
-            <Button text={'call us'}/>
-            <Button text={'free delivery'} type={'active'}/>
+            <Button className={style['button']} text={'about'} />
+            <Button className={style['button']} text={'call us'}/>
+            <Button className={style['button']} text={'free delivery'} type={'active'}/>
         </div>
     )
 }

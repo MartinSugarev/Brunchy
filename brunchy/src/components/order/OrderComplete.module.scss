@@ -1,0 +1,57 @@
+@use '../../styles/colors.scss';
+@use '../../styles/breakpoints.scss' as b;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.orderComplete-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    background: rgba(colors.$white, 0.84);
+}
+
+.orderReview-complete-order{
+    width: 30vw;
+    height: 30vh;
+    border-radius: 15px;
+    background-color: colors.$card_background;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+    @media (max-width: b.$largeBP) {
+        width: 80vw;
+    }
+
+    h2{
+        color: colors.$regular_btn;
+        font-size: 2.2rem;
+        font-family: 'Poppins', sans-serif;
+        @media (max-width: b.$mediumBP) {
+            font-size: 1.5rem;
+        }
+    }
+
+    p{
+       color: colors.$grey;
+       font-size: 1rem;
+       font-weight: 600;
+    }
+
+    button{
+        width: 30%;
+        height: 35px;
+        border-radius: 15px;
+    }
+}
+

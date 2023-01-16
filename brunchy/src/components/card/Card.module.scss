@@ -1,13 +1,20 @@
 @use '../../styles/colors.scss';
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .card{
+    position: relative;
+    display: grid;
+    place-content: center;
     width: 230px;
     height: 270px;
     border-radius: 30px;
     background-color: colors.$card_background;
-    display: grid;
-    place-content: center;
-    position: relative;
+    flex-shrink: 0;
 
     .card-info{
         display: flex;

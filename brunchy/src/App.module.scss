@@ -9,16 +9,15 @@
 
 .app{
     width: 100vw;
-    padding: 10vh 10vw;
+    padding: 10vh 0 10vh 10vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    overflow-x: hidden;
+    gap: 2rem;
     @media (max-width: b.$wideBP){
-        align-items: center;
-        padding: 10vh 5vw;
+        padding: 10vh 7vw;
     }
     @media (max-width: b.$smallBP){
-        align-items: center;
-        padding: 10vh 3vw;
+        padding: 10vh 5vw;
     }
 }
