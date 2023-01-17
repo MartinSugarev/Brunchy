@@ -20,14 +20,16 @@ function App() {
 
 
   return (
+   <> 
     <Context.Provider value={{state, dispatch}}>
     <div className={style['app']}>
        <Header />
        <Hero />
        <CardContainer items={cardItems}/>
-       <Order />
     </div>
+       <Order />
     </Context.Provider>
+   </> 
   );
 }
 

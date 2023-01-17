@@ -9,15 +9,15 @@
 
 .app{
     width: 100vw;
-    padding: 10vh 0 10vh 10vw;
+    padding: 10vh 0 5vh 10vw;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
     gap: 2rem;
     @media (max-width: b.$wideBP){
-        padding: 10vh 7vw;
+        padding: 10vh 0 5vh 7vw;
     }
     @media (max-width: b.$smallBP){
-        padding: 10vh 5vw;
+        padding: 10vh 0 5vh 5vw;
     }
 }

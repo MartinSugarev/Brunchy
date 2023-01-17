@@ -51,9 +51,9 @@
 
     .card-basket{
         position: absolute;
-        right: 20px;
-        bottom: 20px;
-        padding: 8px;
+        right: 1.1rem;
+        bottom: 1.1rem;
+        padding: .5rem;
         border-radius: 7px;
         background-color: colors.$white;
         cursor: pointer;
@@ -64,7 +64,7 @@
         height: 130px;
         position: absolute;
         right: 0;
-        top: -20px;
+        top: -2rem;
 
     }
 }

@@ -16,8 +16,15 @@
     align-content: center;
     padding: 10px 25px 10px 0;
 
+    a{
+      text-decoration: none;
+      color: colors.$grey;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+    }
 
-button:nth-child(3)::after{
+
+button::after{
   content: '';
   background-image: url('../../images/image1.png');
   background-repeat: no-repeat;
