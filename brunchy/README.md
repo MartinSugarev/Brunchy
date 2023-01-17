@@ -1,5 +1,5 @@
 PROJECT NAME:
--- BRUNCHY
+- Brunchy
 
 DEMO LINK: 
 <------>
@@ -18,4 +18,7 @@ SETUP:
 - npm install
 - cd brunchy
 - npm start
+
+STATUS: 
+- ready
 

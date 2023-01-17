@@ -1,12 +1,6 @@
 @use '../../styles/colors.scss';
 @use '../../styles//breakpoints.scss' as b;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 .order-fixed-background{
     position: fixed;
@@ -32,12 +26,17 @@
   gap: 20px;
   align-items: center;
   margin-bottom: 5%;
+
 }
 
 .order-list-container{
     display: block;
     position: absolute;
     bottom: 80px;
+
+    p{
+        font-weight: 700;
+    }
 }
 
 .hidden{
@@ -82,15 +81,5 @@
         content: "$";
     }
 
-    button{
-        border-radius: 15px;
-        padding: 7px 13px;
-        font-size: 1.1rem;
-        color: colors.$white;
-        background-color: colors.$regular_btn;
-        border: 0;
-        cursor: pointer;
-    }
-
-
 }
+

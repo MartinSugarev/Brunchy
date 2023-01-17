@@ -1,13 +1,6 @@
 @use '../../styles/colors.scss';
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .button{
-    color: colors.$grey;
     font-size: .9rem;
     background-color: transparent;
     border: none;
@@ -25,7 +18,12 @@
 }
 
 .regular{
+    border-radius: 15px;
+    padding: 7px 13px;
+    font-size: 1.1rem;
     color: colors.$white;
     background-color: colors.$regular_btn;
+    border: 0;
+    cursor: pointer;
 }
 

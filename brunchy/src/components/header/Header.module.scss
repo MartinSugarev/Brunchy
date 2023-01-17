@@ -1,12 +1,6 @@
 @use '../../styles/breakpoints.scss' as b;
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .header{
     width: 95%;
     display: flex;

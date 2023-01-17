@@ -1,12 +1,6 @@
 @use '../../styles/colors.scss';
 @use '../../styles/breakpoints.scss' as b;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .orderComplete-container{
     position: fixed;
     top: 0;
@@ -36,7 +30,6 @@
     h2{
         color: colors.$regular_btn;
         font-size: 2.2rem;
-        font-family: 'Poppins', sans-serif;
         @media (max-width: b.$mediumBP) {
             font-size: 1.5rem;
         }
