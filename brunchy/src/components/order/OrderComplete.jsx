@@ -2,14 +2,16 @@ import style from './OrderComplete.module.scss';
 import React, {useRef, useEffect} from 'react';
 import Button from '../button/Button';
 
-const OrderComplete = ({handleCompleteClick}) => {
+const OrderComplete = ({handleCompleteClick, handleOutsideClick}) => {
 
     const completeRef = useRef()
 
     useEffect(() => {
       document.addEventListener('click', (e) => {
           e.stopPropagation()
-          handleCompleteClick()
+          if(!completeRef.current.contains(e.target)){
+            handleOutsideClick()
+         }   
       })
     }, [])
 

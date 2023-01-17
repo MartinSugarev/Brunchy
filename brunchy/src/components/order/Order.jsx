@@ -37,11 +37,19 @@ const Order = () => {
         setShowComplete(false)
     }
 
+    const handleOutsideClick = () => {
+        setShowComplete(false)
+    }
+
     const handleOrderNowClick = (e) => {
         e.stopPropagation()
-        setShowComplete(true)
-        setIsActive(false)
-        dispatch({type: 'clear'})
+
+        if(state.price !== 0){
+            setShowComplete(true)
+            setIsActive(true)
+            dispatch({type: 'clear'})
+        }
+
     }
 
     return (
@@ -65,7 +73,7 @@ const Order = () => {
         </div>
         </div> 
        <div style={{display: showComplete ? 'block' : 'none'}}>
-          <OrderComplete handleCompleteClick={handleOkCompleteClick} />
+          <OrderComplete handleCompleteClick={handleOkCompleteClick} handleOutsideClick={handleOutsideClick} />
         </div> 
 
       </>  
