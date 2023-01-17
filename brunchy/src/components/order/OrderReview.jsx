@@ -10,7 +10,7 @@ const OrderReview = ({price = 0, list = []}) => {
              })}
             <div className={style["total-container"]}> 
               <p>Total</p>  
-              <p><span>$</span>{price}</p>
+              <p className={style['price']}>{price.toFixed(2)}</p>
             </div>
         </div>
     )

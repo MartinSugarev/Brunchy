@@ -13,6 +13,11 @@
         color: colors.$hero_text;
     }
 
+    p.orderListItem-price::before{
+        content: "$";
+        color: colors.$regular_btn;
+    }
+
     span{
         color: colors.$orange_text;
     }

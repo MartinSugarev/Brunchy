@@ -5,7 +5,7 @@ const OrderListItem = ({name, price}) => {
     return (
         <div className={style['orderListItem-container']}>
               <p>{name}</p>  
-              <p><span>$</span>{price}</p>
+              <p className={style['orderListItem-price']}>{price.toFixed(2)}</p>
         </div>
     )
 }

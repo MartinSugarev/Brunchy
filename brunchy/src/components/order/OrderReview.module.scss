@@ -37,6 +37,11 @@
         color: colors.$hero_text;
     }
 
+    p.price::before{
+        content: "$";
+        color: colors.$regular_btn;
+    }
+
 
     span{
         color: colors.$orange_text;

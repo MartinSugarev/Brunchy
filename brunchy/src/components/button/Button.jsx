@@ -8,11 +8,7 @@ import React, { memo } from 'react'
     const btnType = type === 'regular' ? 'regular' :  'active';
 
     return (
-       <button onClick={() => {
-           console.log('here');
-           handleClick()
-           
-       }} className={classNames({
+       <button onClick={handleClick} className={classNames({
            [style['button']]: true,
            [style[`${btnType}`]]: type ? true : false
         })}>{text}</button>

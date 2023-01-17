@@ -4,6 +4,7 @@ import OrderReview from './OrderReview';
 import classNames from 'classnames';
 import OrderComplete from './OrderComplete';
 import {Context} from '../../App';
+import Button from '../button/Button';
 
 
 const Order = () => {
@@ -67,8 +68,8 @@ const Order = () => {
             </div>
         <div className={style['order-container']}>
             <img onClick={handleShowReview} className={style['order-basket']} src="/shopping-basket.png" alt="shopping-basket" />
-             <p>{state.price}</p>
-             <button onClick={handleOrderNowClick} className={style['order-button']}>Order Now</button>
+             <p>{state.price.toFixed(2)}</p> 
+             <Button handleClick={handleOrderNowClick}  type={"regular"} text={"Order Now"} />
         </div>
         </div>
         </div> 
