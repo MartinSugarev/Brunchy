@@ -1,16 +1,15 @@
-import style from './Header.module.scss';
-import React, { memo } from 'react';
-import HeaderTitle from './HeaderTitle';
-import HeaderBtnContainer from './HeaderBtnContainer';
-
+import style from "./Header.module.scss";
+import React, { memo } from "react";
+import HeaderTitle from "./HeaderTitle";
+import HeaderBtnContainer from "./HeaderBtnContainer";
 
 const Header = () => {
-    return (
-        <div className={style['header']}>
-            <HeaderTitle />
-            <HeaderBtnContainer />
-        </div>
-    )
-}
+  return (
+    <div className={style["header"]}>
+      <HeaderTitle />
+      <HeaderBtnContainer />
+    </div>
+  );
+};
 
-export default memo(Header)
+export default memo(Header);

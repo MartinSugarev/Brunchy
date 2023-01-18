@@ -1,29 +1,28 @@
 @use '../../styles/colors.scss';
 
-.button{
-    font-size: .9rem;
-    background-color: transparent;
-    border: none;
-    text-transform: capitalize;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 18px;
+.button {
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 18px;
 }
 
-.active{
-    position: relative;
-    background-color: colors.$active;
-    color: colors.$orange_text;
-    padding: 10px 30px 10px 10px;
+.active {
+  position: relative;
+  background-color: colors.$active;
+  color: colors.$orange_text;
+  padding: 10px 30px 10px 10px;
 }
 
-.regular{
-    border-radius: 15px;
-    padding: 7px 13px;
-    font-size: 1.1rem;
-    color: colors.$white;
-    background-color: colors.$regular_btn;
-    border: 0;
-    cursor: pointer;
+.regular {
+  border-radius: 15px;
+  padding: 7px 13px;
+  font-size: 1.1rem;
+  color: colors.$white;
+  background-color: colors.$regular_btn;
+  border: 0;
+  cursor: pointer;
 }
-

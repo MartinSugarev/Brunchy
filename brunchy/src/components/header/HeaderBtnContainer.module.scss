@@ -1,35 +1,31 @@
 @use '../../styles/colors.scss';
 
+.buttons-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  padding: 10px 25px 10px 0;
 
-.buttons-container{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    padding: 10px 25px 10px 0;
+  a {
+    text-decoration: none;
+    color: colors.$grey;
+    font-weight: 600;
+  }
 
-    a{
-      text-decoration: none;
-      color: colors.$grey;
-      font-weight: 600;
-    }
-
-
-button::after{
-  content: '';
-  background-image: url('../../images/image1.png');
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 40px;
-  border-radius: 50%;
-  top: 0;
-  bottom: 0;
-  transform: translateX(10px);
-  background-color: colors.$white;
-}
-
-
+  button::after {
+    content: "";
+    background-image: url("../../images/image1.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(10px);
+    background-color: colors.$white;
+  }
 }

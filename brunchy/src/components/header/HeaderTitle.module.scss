@@ -1,11 +1,10 @@
 @use '../../styles/colors.scss';
 
-
 .headerTitle-container {
-    h1{
-        font-size: 2.1 rem;
-        color: colors.$hero_text;
-        font-weight: 700;
-        line-height: 1;
-    }
+  h1 {
+    font-size: 2.1 rem;
+    color: colors.$hero_text;
+    font-weight: 700;
+    line-height: 1;
+  }
 }

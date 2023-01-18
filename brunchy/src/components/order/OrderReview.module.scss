@@ -1,48 +1,46 @@
 @use '../../styles/colors.scss';
 @use '../../styles/breakpoints.scss' as b;
 
-.orderReview-container{
-    width: 30vw;
-    border-radius: 15px;
-    padding: 30px;
-    background-color: colors.$card_background;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    @media (max-width: b.$largeBP) {
-        width: 60vw;
-    }
-    @media (max-width: b.$mediumBP) {
-        width: 80vw;
-    }
+.orderReview-container {
+  width: 30vw;
+  border-radius: 15px;
+  padding: 30px;
+  background-color: colors.$card_background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  @media (max-width: b.$largeBP) {
+    width: 60vw;
+  }
+  @media (max-width: b.$mediumBP) {
+    width: 80vw;
+  }
 }
 
-.total-container{
-    padding-top: 20px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.1rem;
-    border: .5px solid colors.$grey;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
+.total-container {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  border: 0.5px solid colors.$grey;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
 
-    p{
-        color: colors.$hero_text;
-    }
+  p {
+    color: colors.$hero_text;
+  }
 
-    p.price::before{
-        content: "$";
-        color: colors.$regular_btn;
-    }
+  p.price::before {
+    content: "$";
+    color: colors.$regular_btn;
+  }
 
-
-    span{
-        color: colors.$orange_text;
-    }
+  span {
+    color: colors.$orange_text;
+  }
 }

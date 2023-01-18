@@ -1,50 +1,45 @@
 @use '../../styles/colors.scss';
 @use '../../styles//breakpoints.scss' as b;
 
+.hero {
+  width: 40%;
 
-.hero{
-    width: 40%;
+  @media (max-width: b.$wideBP) {
+    width: 80%;
+    margin: auto;
+  }
+  @media (max-width: b.$smallBP) {
+    width: 100%;
+    margin: auto;
+  }
 
-    @media (max-width: b.$wideBP){
-        width: 80%;
-        margin: auto;
-    }
-    @media (max-width: b.$smallBP){
-        width: 100%;
-        margin: auto;
-    }
-    
+  h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: colors.$hero_text;
+    text-align: left;
 
-    h1{
-        font-size: 4rem;
-        line-height: 1.2;
-        color: colors.$hero_text;
-        text-align: left;
-
-        @media (max-width: b.$wideBP){
-            text-align: center;
-            font-size: 3.5rem;
-        }
-
-        @media (max-width: b.$smallBP){
-            text-align: center;
-            font-size: 2.3rem;
-        }
+    @media (max-width: b.$wideBP) {
+      text-align: center;
+      font-size: 3.5rem;
     }
 
-   
-   h1:nth-child(2){
+    @media (max-width: b.$smallBP) {
+      text-align: center;
+      font-size: 2.3rem;
+    }
+  }
+
+  h1:nth-child(2) {
     color: colors.$orange_text;
     margin-bottom: 1.5rem;
-    }
-
-    
-}
- p{
-    font-weight: 400;
-
- @media (max-width: b.$wideBP){
- text-align: center;
- font-size: .9rem;
   }
- }
+}
+p {
+  font-weight: 400;
+
+  @media (max-width: b.$wideBP) {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}

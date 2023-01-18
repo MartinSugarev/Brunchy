@@ -1,12 +1,11 @@
 @use '../../styles/breakpoints.scss' as b;
 
-
-.header{
-    width: 95%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    @media (min-width: b.$smallBP) {
-        align-items: center;
-    }
+.header {
+  width: 95%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media (min-width: b.$smallBP) {
+    align-items: center;
+  }
 }
