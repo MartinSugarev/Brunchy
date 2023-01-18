@@ -4,7 +4,7 @@ import { memo, useContext, useEffect } from "react";
 import ItemClass from "../../itemClass";
 import { Context } from "../../App";
 
-const Card = ({ image = "/Asset 5.png", name, caption, price }) => {
+const Card = ({ image, name, caption, price }) => {
   const { state, dispatch } = useContext(Context);
 
   const handleBasketClick = () => {
