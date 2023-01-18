@@ -3,6 +3,7 @@
 .header {
   width: 95%;
   display: flex;
+  padding-left: 10vw;
   align-items: flex-start;
   justify-content: space-between;
   @media (min-width: b.$smallBP) {
