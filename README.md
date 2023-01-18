@@ -12,8 +12,8 @@ TECHNOLOGIES: Reactjs, SASS, JavaScript, HTML, classnames
 SETUP:
 
 clone the repository
-npm install
 cd brunchy
+npm install
 npm start
 STATUS:
 
