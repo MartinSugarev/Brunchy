@@ -7,19 +7,19 @@
   text-transform: capitalize;
   cursor: pointer;
   font-weight: 600;
-  border-radius: 18px;
+  border-radius: 1.08rem;
 }
 
 .active {
   position: relative;
   background-color: colors.$active;
   color: colors.$orange_text;
-  padding: 10px 30px 10px 10px;
+  padding: 0.6rem 1.8rem 0.6rem 0.6rem;
 }
 
 .regular {
-  border-radius: 15px;
-  padding: 7px 13px;
+  border-radius: 0.9rem;
+  padding: 0.42rem 0.78rem;
   color: colors.$white;
   background-color: colors.$regular_btn;
   border: 0;

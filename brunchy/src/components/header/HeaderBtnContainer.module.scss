@@ -9,10 +9,10 @@
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  padding: 0 25px 0 0;
+  padding: 0 1.5rem 0 0;
 
   @media (max-width: b.$smallBP) {
-    padding: 10px 25px 0 0;
+    padding: .6rem 1.5rem 0 0;
   }
 
   a {
@@ -26,11 +26,11 @@
     background-image: url("../../images/image1.png");
     background-repeat: no-repeat;
     position: absolute;
-    width: 40px;
+    width: 2.4rem;
     border-radius: 50%;
     top: 0;
     bottom: 0;
-    transform: translateX(10px);
+    transform: translateX(.6rem);
     background-color: colors.$white;
   }
 }

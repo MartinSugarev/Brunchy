@@ -21,15 +21,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.2rem;
   align-items: center;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
 .order-list-container {
   display: block;
   position: absolute;
-  bottom: 80px;
+  bottom: 4.8rem;
 
   p {
     font-weight: 700;
@@ -42,10 +42,10 @@
 
 .order-container {
   width: 30vw;
-  border-radius: 15px;
+  border-radius: .9rem;
   margin: 0 auto;
   background-color: colors.$card_background;
-  padding: 10px 30px;
+  padding: .6rem 1.8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

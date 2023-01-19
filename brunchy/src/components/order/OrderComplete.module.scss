@@ -15,7 +15,7 @@
 .orderReview-complete-order {
   width: 30vw;
   height: 30vh;
-  border-radius: 15px;
+  border-radius: .9rem;
   background-color: colors.$card_background;
   display: flex;
   flex-direction: column;
@@ -43,7 +43,7 @@
 
   button {
     width: 30%;
-    height: 35px;
-    border-radius: 15px;
+    height: 2.1rem;
+    border-radius: .9rem;
   }
 }
