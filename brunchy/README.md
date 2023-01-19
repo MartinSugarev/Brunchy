@@ -8,9 +8,9 @@ ABOUT THE APP:
 Brunchy is a simple delivery app which allows user to order their favorite brunch meal. They can add orders to a basket, review the list of meals and then place an order. 
 
 SCREENSHOTS:
-<img src="./images/screenshot1.png" width="100">
-<img src="./images/screenshot2.png" width="100">
-<img src="./images/screenshot3.png" width="100">
+<img src="./images/Screenshot1.png" width="100">
+<img src="./images/Screenshot2.png" width="100">
+<img src="./images/Screenshot3.png" width="100">
 
 TECHNOLOGIES: 
 Reactjs, SASS, JavaScript, HTML, classnames
